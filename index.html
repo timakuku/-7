@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа по JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <h1>Приветствие пользователя</h1>
+    <input type="text" id="nameInput" placeholder="Введите ваше имя">
+    <input type="number" id="ageInput" placeholder="Введите ваш возраст">
+    <button id="submitButton">Отправить</button>
+    <p id="greetingMessage"></p>
+
+    <h2>Калькулятор</h2>
+    <div class="section">
+        <input type="number" id="num1" placeholder="Число 1">
+        <input type="number" id="num2" placeholder="Число 2">
+        <br>
+        <button onclick="calculate('+')">Сложение</button>
+        <button onclick="calculate('-')">Вычитание</button>
+        <button onclick="calculate('*')">Умножение</button>
+        <button onclick="calculate('/')">Деление</button>
+        <p id="calcResult"></p>
+    </div>
+
+    <h2>Календарь</h2>
+    <div class="section">
+        <p id="currentDate"></p>
+    </div>
+
+    <h2>Факториал числа</h2>
+    <div class="section">
+        <input type="number" id="factorialInput" placeholder="Введите число">
+        <button id="factorialButton">Вычислить факториал</button>
+        <p id="factorialResult"></p>
+    </div>
+
+</body>
+</html>
